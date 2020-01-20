@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat-M, Cambria, Georgia, serif
+}
+
+@font-face {
+  font-family: Montserrat-M;
+  src: url('../../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-L;
+  src: url('../../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-E;
+  src: url('../../fonts/Montserrat-ExtraBold.ttf');
+}
+
+:root {
+  --primary-color: #0f445a;
+  --secundary-color: #fff;
+  --card-title-color: #F24444;
+  --title-color: #ecf1f1;
+  --btn-color: #0f445a;
+  --bg-color: #ecf1f1;
+}
+
+.App {
+  background-color: var(--bg-color);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.App-card-wrapper {
+  /*display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 15rem);*/
+  columns: 5;
+  padding: 5rem 1rem 1rem 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+  transition: all .3s ease;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  width: 15rem;
+}
+
+.close-sideNav {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-bottom: 1px solid var(--secundary-color);
+}
+
+.ico-close {
+  height: 2rem;
+  width: 2rem;
+  background-image: url('../../images/close.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+
+.logo-sideNav {
+  height: 2rem;
+  width: 10rem;
+  background-image: url(../../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: .4rem;
+}
+
+.category-wrapper {
+  margin-top: 1rem;
+}
+
+.category-wrapper h5 {
+  padding: 1rem;
+  color: var(--card-title-color);
+}
+
+.category-item {
+  padding: 1rem;
+  color: #a8a8a8;
+  list-style: none;
+  transition: all .5s ease;
+  cursor: pointer;
+  border-bottom: 1px solid #0f3541;
+}
+
+.category-item:hover {
+  background-color: #052a35;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+
+@media (max-width: 1300px) {
+    .App-card-wrapper {
+      columns: 4;
+    }
+}
+
+
+@media (max-width: 1030px) {
+  .App-card-wrapper {
+    columns: 3;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .App-card-wrapper {
+    columns: 2;
+  }
+}
+
+@media (max-width: 530px) {
+  .App-card-wrapper {
+    columns: 1;
+  }
+}

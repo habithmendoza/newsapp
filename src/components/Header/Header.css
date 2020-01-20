@@ -1,0 +1,116 @@
+.header-wrapper {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 4rem 12rem 4rem 1fr;
+    box-shadow: 0 1px 8px 1px rgba(0,0,0,.5);
+}
+
+.logo {
+    height: 4rem;
+    width: 10rem;
+    background-image: url('../../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: .5rem;
+}
+
+.ico-sideNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico {
+    height: 2rem;
+    width: 2rem;
+    background-image: url('../../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.spinner-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    height: 2rem;
+    width: 2rem;
+    background-image: url('../../images/spinner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: spiner 1.5s ease infinite;
+}
+
+@keyframes spiner {
+    to {transform: rotate(360deg);}
+}
+
+.category-ico {
+    height: 2rem;
+    width: auto;
+    margin-right: 2rem;
+    padding: .5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--bg-color);
+    color: var(--card-title-color);
+    font-family: Montserrat-E;
+    justify-self: self-end;
+    user-select: none;
+}
+
+@media (max-width: 480px ) {
+    .header-wrapper {    
+        grid-template-columns: 4rem 11rem 3rem 1fr;
+    }
+}
+
+@media (max-width: 450px ) {
+    .category-ico {
+     font-size: .5rem;
+    }
+}
+
+@media (max-width: 400px ) {
+    .header-wrapper {    
+        grid-template-columns: 4rem 8rem 3rem 1fr;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 350px ) {
+    .header-wrapper {    
+        grid-template-columns: 4rem 5rem 3rem 1fr;
+    }
+
+    .logo {
+        width: 4rem;
+    }
+}
+
+@media (max-width: 300px ) {
+    
+    .header-wrapper {    
+        grid-template-columns: 3rem 5rem 3rem 1fr;
+    }
+}
