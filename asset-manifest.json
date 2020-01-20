@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newsapp/static/css/main.8fc82219.chunk.css",
+    "main.js": "/newsapp/static/js/main.c3b195c4.chunk.js",
+    "main.js.map": "/newsapp/static/js/main.c3b195c4.chunk.js.map",
+    "runtime-main.js": "/newsapp/static/js/runtime-main.da1f3a28.js",
+    "runtime-main.js.map": "/newsapp/static/js/runtime-main.da1f3a28.js.map",
+    "static/js/2.bb1a174d.chunk.js": "/newsapp/static/js/2.bb1a174d.chunk.js",
+    "static/js/2.bb1a174d.chunk.js.map": "/newsapp/static/js/2.bb1a174d.chunk.js.map",
+    "index.html": "/newsapp/index.html",
+    "precache-manifest.388160c1b6a8f4055a8ff9ff0b8aa3d6.js": "/newsapp/precache-manifest.388160c1b6a8f4055a8ff9ff0b8aa3d6.js",
+    "service-worker.js": "/newsapp/service-worker.js",
+    "static/css/main.8fc82219.chunk.css.map": "/newsapp/static/css/main.8fc82219.chunk.css.map",
+    "static/js/2.bb1a174d.chunk.js.LICENSE": "/newsapp/static/js/2.bb1a174d.chunk.js.LICENSE",
+    "static/media/App.css": "/newsapp/static/media/Montserrat-Medium.c8b6e083.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da1f3a28.js",
+    "static/js/2.bb1a174d.chunk.js",
+    "static/css/main.8fc82219.chunk.css",
+    "static/js/main.c3b195c4.chunk.js"
+  ]
+}
